@@ -1,0 +1,113 @@
+#back {
+    filter: blur(8px);
+    -webkit-filter: blur(0px);
+    height: 40vh;
+    width: 100vw;
+    position: 'relative';
+}
+
+.container-sm {
+    font-size: 5vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 0vh;
+    margin-left: 19vw;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.progress {
+    width: 150px;
+    height: 150px;
+    background: none;
+    position: relative;
+}
+
+.progress::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 6px solid #eee;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress>span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.progress .progress-left {
+    left: 0;
+}
+
+.progress .progress-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 6px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+
+.progress .progress-left .progress-bar {
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    transform-origin: center left;
+}
+
+.progress .progress-right {
+    right: 0;
+}
+
+.progress .progress-right .progress-bar {
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    transform-origin: center right;
+}
+
+.progress .progress-value {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+body {
+
+    /* background-image: url("https://compote.slate.com/images/7ff0082f-ed9a-42b7-8bba-158679977df9.jpeg?crop=1560%2C1040%2Cx0%2Cy0"); */
+    /* background: linear-gradient(to right, #A4BFEF,  #6A93CB); */
+    /* background: linear-gradient(to right, #a8ff78, #78ffd6); */
+    min-height: fit-content;
+    /* background-color: rgb(207 250 254); */
+}
+
+.rounded-lg {
+    border-radius: 1rem;
+}
+
+.text-gray {
+    color: #aaa;
+}
+
+div.h4 {
+    line-height: 1rem;
+}
+
+h1 {
+    color: black;
+}
